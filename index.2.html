@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre Mi</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="nav"></div>
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav").innerHTML = data;
+      });
+  </script>
+
+  <!-- Contenedor centrado -->
+  <div class="contenedor-sobre-mi">
+    <table class="tabla-sobre-mi" border="1">
+      <thead>
+        <tr>
+          <th colspan="6" class="titulo-tabla">Sobre Mi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="imagenes/WhatsApp Image 2025-09-25 at 16.57.59.jpeg" alt="Foto sobre Mi" class="foto-sobre-mi" /></td>
+          <td><img src="imagenes/WhatsApp Image 2025-09-25 at 17.01.56 (1).jpeg" alt="Foto jugando al Fútbol" class="foto-sobre-mi" /></td>
+          <td><img src="imagenes/WhatsApp Image 2025-09-25 at 17.01.56.jpeg" alt="Foto cuando salí campeón" class="foto-sobre-mi" /></td>
+          <td><img src="imagenes/WhatsApp Image 2025-09-25 at 17.01.58 (1).jpeg" alt="Foto cazando" class="foto-sobre-mi" /></td>
+          <td><img src="imagenes/WhatsApp Image 2025-09-25 at 17.01.58 (2).jpeg" alt="Foto pescando" class="foto-sobre-mi" /></td>
+          <td><img src="imagenes/WhatsApp Image 2025-09-25 at 17.01.58.jpeg" alt="Foto de mi debut en primera" class="foto-sobre-mi" /></td>
+        </tr>
+        <tr>
+          <td colspan="6" class="texto-sobre-mi">
+            Mi nombre es Ebrahin, nací en Pigüé y crecí en Garré, donde cursé el jardín, la escuela primaria y secundaria. A los 18 años me mudé a Buenos Aires para continuar mi formación académica en la UADE, eligiendo una carrera que combina dos de mis grandes intereses: las finanzas y la tecnología.
+
+            El deporte siempre ha sido una parte fundamental de mi vida. Jugué al fútbol en el club de mi pueblo, donde logré salir campeón y debutar en primera, y también practiqué vóley. Actualmente me encuentro explorando un nuevo desafío deportivo: el kickboxing. Estas experiencias me permitieron desarrollar valores como la constancia, el esfuerzo y el compañerismo.
+
+            Más allá del deporte, disfruto de la naturaleza y la vida al aire libre, especialmente de actividades como la pesca, la caza y las salidas al campo. Durante la cuarentena descubrí mi pasión por la programación y lo tecnológico, lo que reforzó mi decisión de estudiar un área vinculada con la innovación y el análisis financiero.
+
+            Hoy me dedico plenamente a mis estudios, con el objetivo de crecer personal y profesionalmente, y de poder en un futuro combinar mis intereses en finanzas, tecnología y deporte en proyectos que generen valor.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="index.html" class="link-inicio">Volver al Inicio</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Mate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div><div id="nav"></div>
+
+<script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("nav").innerHTML = data;
+    });
+</script>
+    <section>
+        <h1 class="titulo-mate">Historia del Mate</h1>
+
+        <p class="frase-colorida">
+            <span class="azul">"El Mate</span>
+            <span class="amarillo"> Es</span>
+            <span class="azul"> Argentino"</span>
+        </p>
+
+        <p class="texto-mate">
+            El mate argentino tiene sus raíces en los pueblos guaraníes, quienes fueron los primeros en descubrir las virtudes de la yerba. Ellos la consideraban un regalo divino que les daba fuerza y compañía. Con la llegada de los españoles, la costumbre se expandió y, con el tiempo, se convirtió en parte esencial de la vida en el Río de la Plata.
+            <br><br>
+            En Argentina, el mate se volvió inseparable del gaucho. En las soledades de la pampa, el fuego encendido y la calabaza en mano eran compañía, refugio y tradición. De allí pasó a las casas criollas y a las ciudades, manteniéndose como un ritual compartido.
+            <br><br>
+            Lo que distingue al mate argentino es su carácter social. No se toma solo como una bebida, sino como un gesto de hospitalidad y unión: alguien ceba y los demás esperan su turno, todos bebiendo del mismo mate. Es un símbolo de confianza y amistad.
+            <br><br>
+            Hoy, el mate está presente en todos los rincones del país: en la mesa del desayuno, en la oficina, en las plazas y en los viajes largos. Se lo puede tomar amargo o dulce, acompañado de facturas o tortas fritas, pero siempre con el mismo espíritu: acercar a las personas.
+            <br><br>
+            El mate argentino no es solo una infusión: es parte de la identidad nacional, un lazo que une generaciones y que convierte un simple sorbo en un ritual de pertenencia.
+        </p>
+
+        <div class="centrado">
+            <a href="index.html" class="link-volver">Volver al Inicio</a>
+        </div>
+    </section>
+
+</body>
+</html>
